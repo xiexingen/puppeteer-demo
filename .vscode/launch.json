@@ -7,7 +7,7 @@
         "request": "launch",​
         "cwd": "${workspaceRoot}",​
         "runtimeArgs": ["-r", "ts-node/register"],​
-        "args": ["${workspaceRoot}/src/auto-form.ts"]​
+        "args": ["${workspaceRoot}/src/main.ts"]​
       }​
     ]​
   }

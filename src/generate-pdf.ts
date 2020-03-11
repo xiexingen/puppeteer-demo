@@ -4,7 +4,7 @@
 
 import * as puppeteer from 'puppeteer';
 
-(async ()=>{
+export default async ()=>{
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
 
@@ -24,4 +24,4 @@ import * as puppeteer from 'puppeteer';
       }
     });
     await browser.close();
-})()
+}

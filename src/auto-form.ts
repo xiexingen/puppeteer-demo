@@ -4,7 +4,7 @@
 
 import * as puppeteer from "puppeteer";
 
-(async () => {
+export default async () => {
   const browser = await puppeteer.launch({
     headless: false
   });
@@ -18,5 +18,5 @@ import * as puppeteer from "puppeteer";
   });
   await page.click("input[type=submit]");
 
-  //await browser.close();
-})();
+  await browser.close();
+}

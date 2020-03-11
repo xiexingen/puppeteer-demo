@@ -4,7 +4,7 @@
 
 import * as puppeteer from 'puppeteer';
 
-(async ()=>{
+export default async ()=>{
     const browser=await puppeteer.launch({
         headless:true,
         //slowMo:1000
@@ -22,4 +22,4 @@ import * as puppeteer from 'puppeteer';
         path:'download/example.jpg'
     })
     await browser.close();
-})()
+}

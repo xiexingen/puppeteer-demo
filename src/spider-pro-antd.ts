@@ -4,7 +4,7 @@
 
 import * as puppeteer from "puppeteer";
 
-(async () => {
+export default async () => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
   await page.goto("https://preview.pro.ant.design/dashboard/monitor");
@@ -14,4 +14,4 @@ import * as puppeteer from "puppeteer";
     fullPage: true
   });
   await browser.close();
-})();
+}

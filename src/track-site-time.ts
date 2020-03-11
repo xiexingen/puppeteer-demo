@@ -4,7 +4,7 @@
 
 import * as puppeteer from "puppeteer";
 
-(async () => {
+export default async () => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
   await page.tracing.start({
@@ -14,4 +14,4 @@ import * as puppeteer from "puppeteer";
   await page.goto("https://github.com/login");
   await page.tracing.stop();
   await browser.close();
-})();
+}
